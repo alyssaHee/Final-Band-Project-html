@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Alyssa Hee, 2024-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alyssa's Band Project</title>
+    <link rel="icon" type="image/png" href="images/musicnote.ico" />
+    <link rel="stylesheet" href="stuff/home.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <script src="stuff/home.js" charset="utf-8"></script>
+
+    <div class="container">
+      <h1>Alyssa's Favourites</h1>
+    </div>
+    <!--These are the 3 items shown-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            id="tape"
+            src="images/cassette.png"
+            alt="cassette"
+            class="img-fluid"
+            onclick="tapepress()"
+          />
+          <p class="caption">Favourite Pieces</p>
+        </div>
+        <div class="col">
+          <img
+            id="cd"
+            src="images/cd.png"
+            alt="cd"
+            class="img-fluid"
+            onclick="cdpress()"
+          />
+          <p class="caption">Favourite Memories</p>
+        </div>
+        <div class="col">
+          <img
+            id="frame"
+            src="images/frame.png"
+            alt="frame"
+            class="img-fluid"
+            onclick="framepress()"
+          />
+          <p class="caption">Favourite Performance</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
