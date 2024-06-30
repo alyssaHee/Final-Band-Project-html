@@ -1,0 +1,92 @@
+/* also poor organization*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100vw 100vh;
+}
+
+.container {
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+  position: relative;
+}
+
+#text {
+  text-align: center;
+  width: 100%;
+  top: 40%;
+  margin-top: 2%;
+}
+
+#head {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#paragraph {
+  text-align: left;
+}
+
+.d-block {
+  height: 300px;
+  width: auto;
+  object-fit: contain;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(223, 205, 135) !important;
+}
+
+#waltz {
+  margin-top: 1%;
+}
+
+.date {
+  font-size: medium;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 0px;
+}
+
+#favemem {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+#prev {
+  width: 5%;
+}
+
+#next {
+  width: 5%;
+}
+
+#carouselExampleCaptions {
+  display: inline-block;
+  width: 54%;
+  text-align: center !important;
+  object-fit: contain;
+}
+
+#back {
+  position: absolute;
+  scale: 56%;
+  top: 78%;
+  left: 4%;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#back:hover {
+  opacity: 1;
+  scale: 62%;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello.</title>
+    <link rel="icon" type="image/png" href="../images/musicnote.ico" />
+    <link rel="stylesheet" href="cd.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="favemem">Favourite Memories</h1>
+
+    <!--Bootstrap gave me template for this, ran into lot of bugs-found out had to remove "-bs" for it to work-->
+    <div class="container">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/awe.png" class="d-block w-100" alt="..." />
+            <h2 class="date">grade 7, 2019</h2>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../images/ferociousfive.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h2 class="date">grade 9, 2020-2021</h2>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../images/rehearsal1.PNG"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h2 class="date">rehearsal Spring 2021</h2>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/bandlab.png" class="d-block w-100" alt="..." />
+            <h2 class="date">The finished product:</h2>
+            <audio
+              id="waltz"
+              controls
+              src="../audio/Waltz_of_the_Flowers.mp3"
+            ></audio>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/fox.jpg" class="d-block w-100" alt="..." />
+            <h2 class="date">grade 10, 11</h2>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../images/cake.png" class="d-block w-100" alt="..." />
+            <h2 class="date">grade 10, 11, 12</h2>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/drumline.png" class="d-block w-100" alt="..." />
+            <h2 class="date">grade 10, 11, 12</h2>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/switch.png" class="d-block w-100" alt="..." />
+            <h2 class="date">Wind Ensemble!</h2>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../images/bandtrip.png" class="d-block w-100" alt="..." />
+            <h2 class="date">grade 11, 2022</h2>
+          </div>
+          <div class="carousel-item">
+            <video controls width="459px" height="233px" id="player1">
+              <source src="../videos/symphonicsongs.mp4" type="video/mp4" />
+            </video>
+            <h2 class="date">I'm pretty sure Yeho took this video</h2>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="../images/seniorhonourbandlink.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h2 class="date">grade 10, 2022</h2>
+          </div>
+          <div class="carousel-item">
+            <video controls width="459px" height="233px" id="player2">
+              <source src="../videos/Arabesque.mp4" type="video/mp4" />
+            </video>
+            <h2 class="date">Senior Honour Band 2023</h2>
+          </div>
+          <div class="carousel-item">
+            <video controls width="459px" height="233px" id="player3">
+              <source src="../videos/deck the halls.mp4" type="video/mp4" />
+            </video>
+            <h2 class="date">Dec. 8, 2023</h2>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/trombone.png" class="d-block w-100" alt="..." />
+            <h2 class="date">grade 12</h2>
+          </div>
+
+          <a
+            id="prev"
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+            onclick="back()"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </a>
+          <a
+            id="next"
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+            onclick="forward()"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </a>
+        </div>
+      </div>
+      <div id="text">
+        <h1 id="head">Playing with the FRC wind ensemble</h1>
+        <p id="paragraph">
+          This was one of my most prominent memories from Acadia wind ensemble.
+          For rehearsal one day, we went to FRC’s old band room to play with the
+          FRC wind ensemble. I was in grade 7 and I remember thinking that the
+          FRC people were huge. When I saw the music they were playing I was in
+          awe. It looked impossibly hard to play. And then when we began
+          playing, the FRC student next to me whipped out his phone because he
+          didn’t have the physical music and I was in more shock. I couldn’t see
+          a single note on his phone, but he could and was even pointing out
+          where we were when I got lost. I probably got lost every 3 bars. I
+          thought those students were so cool and this experience made me more
+          interested in band. This is one of my favourite memories because I
+          look back on it now and see how much I have grown and learned since.
+        </p>
+      </div>
+    </div>
+    <img
+      class="backbtn"
+      id="back"
+      src="../images/back.png"
+      onclick="goback()"
+    />
+  </body>
+  <script src="cd.js" charset="utf-8"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

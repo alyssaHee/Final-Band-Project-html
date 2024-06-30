@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello.</title>
+    <link rel="icon" type="image/png" href="../images/musicnote.ico" />
+    <link rel="stylesheet" href="stereo.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+    <div id="cdPlay">
+      <img id="cdplay" src="../images/cdplay.png" onclick="startcd()" />
+    </div>
+    <!--Don't know if this did anything-->
+    <iframe
+      src="../audio/silence.mp3"
+      allow="autoplay"
+      id="audio"
+      style="display: none"
+    ></iframe>
+    <!--load in all audio-->
+    <audio id="arabesque" src="../audio/Arabesque.mp3" preload="auto"></audio>
+    <audio
+      id="concertvariations"
+      src="../audio/Concert Variations.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio id="danzon" src="../audio/Danzon.mp3" preload="auto"></audio>
+
+    <audio
+      id="eastcoastgirl"
+      src="../audio/East Coast Girl.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio id="elsas" src="../audio/Elsas.mp3" preload="auto"></audio>
+
+    <audio
+      id="eternalfather"
+      src="../audio/Eternal Father.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio
+      id="eagles"
+      src="../audio/On Eagles Wings.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio id="hobbits" src="../audio/Hobbits.mp3" preload="auto"></audio>
+
+    <audio id="lux" src="../audio/Lux Perpetua.mp3" preload="auto"></audio>
+
+    <audio
+      id="russianfestival"
+      src="../audio/Russian Festival.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio id="sanctuary" src="../audio/Sanctuary.mp3" preload="auto"></audio>
+
+    <audio id="seasongs" autoplay>
+      <source src="../audio/Sea Songs.mp3" type="audio/mp3" />
+    </audio>
+
+    <audio id="slava" src="../audio/Slava.mp3" preload="auto"></audio>
+
+    <audio
+      id="symphonicdance3"
+      src="../audio/Symphonic Dance No. 3,  Fiesta.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio
+      id="symphonicsongs"
+      src="../audio/Symphonic songs for band.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio
+      id="willow"
+      src="../audio/The Willow Tree.mp3"
+      preload="auto"
+    ></audio>
+
+    <div id="container" class="container text-center">
+      <div id="innercont" class="row align-items-start">
+        <div id="imgcol" class="col">
+          <div id="pieceimg2" class="imgpieces"></div>
+          <img id="pieceimg" />
+          <p id="captionimg" class="caption"></p>
+          <div id="imgs">
+            <img
+              id="favepart"
+              src="../images/jump2.png"
+              onclick="jumpTofave()"
+            />
+            <img id="info" src="../images/jump1.png" />
+          </div>
+        </div>
+        <div id="rightcol" class="col">
+          <h2 id="head">Sea Songs</h2>
+          <h4 id="subhead">Vaughan Williams</h4>
+          <!--show this at first because the javascript will not kick in until user interacts-->
+          <p id="paragraph">
+            I played Sea Songs in grade 7 in the Acadia wind ensemble. This was
+            the first piece I played after joining wind and I remember it being
+            really difficult for me with all the runs. I admired the other
+            clarinets who were playing so well and I thought it was amazing how
+            they could move their fingers so quickly. This piece is one of my
+            favourites because of the way it sounds like waves playing with each
+            other on the water. I was also very proud of how much I improved
+            while learning this piece. <br />My favourite part is where the
+            clarinets get the melody because it is so smooth, and it tickles my
+            brain in the right spot. I don’t really know how to explain it, but
+            that part is just mwah… <br /><b>Fun fact:</b> Sea Songs is the only
+            piece that I can distinctly remember playing at Acadia, other than
+            Oye Como Va.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--This is the group of buttons that controls playback-->
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+      <button id="left" type="button" class="btn" onclick="back()">
+        <div class="imageBox">
+          <div class="imageInn">
+            <img src="../images/left.png" alt="left" />
+          </div>
+          <div class="hoverImg">
+            <img src="../images/left2.png" alt="left2" />
+          </div>
+        </div>
+      </button>
+      <button id="mid" type="button" class="btn" onclick="pause()">
+        <div class="imageBox">
+          <div class="imageInn">
+            <img src="../images/mid.png" alt="mid" />
+          </div>
+          <div class="hoverImg">
+            <img src="../images/mid2.png" alt="mid2" />
+          </div>
+        </div>
+      </button>
+      <button id="right" type="button" class="btn" onclick="forward()">
+        <div class="imageBox">
+          <div class="imageInn">
+            <img src="../images/right.png" alt="right" />
+          </div>
+          <div class="hoverImg">
+            <img src="../images/right2.png" alt="right2" />
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <img
+      class="backbtn"
+      id="back"
+      src="../images/back.png"
+      onclick="goback()"
+    />
+
+    <div id="autodiv">
+      <img
+        id="autoplay"
+        src="../images/autoon1.png"
+        onclick="toggleautoplay()"
+      />
+      <img id="infoauto" src="../images/autoplay.png" />
+    </div>
+  </body>
+
+  <script src="stereo.js" charset="utf-8"></script>
+</html>

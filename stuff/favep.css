@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100vw 100vh;
+}
+
+.container {
+  font-size: large !important;
+  text-align: center;
+  align-items: center;
+  margin-top: 4.5%;
+}
+
+#favep {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 1%;
+}
+
+#text {
+  margin-top: 1%;
+}
+
+/* very bad variable name*/
+#h22 {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#back {
+  position: absolute;
+  scale: 56%;
+  top: 78%;
+  left: 4%;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#back:hover {
+  opacity: 1;
+  scale: 62%;
+}
